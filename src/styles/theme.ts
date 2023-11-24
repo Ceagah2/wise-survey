@@ -16,5 +16,10 @@ export const theme = {
   fonts:{
     heading: 'Poppins_600SemiBold',
     body: 'Poppins_400Regular',
+  },
+  sizes:{
+    heading: '24px',
+    subHeading: '18px',
+    body: '16px',
   }
 }
