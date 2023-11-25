@@ -5,8 +5,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Poppins_600SemiBold, Poppins_400Regular } from '@expo-google-fonts/poppins';
 
-import Home from './src/pages/Home';
-import Slider from './src/pages/Slider'
+import Home from './src/screens/Home';
+import Slider from './src/screens/Slider'
 
 export default function App() {
   const Stack = createNativeStackNavigator()
