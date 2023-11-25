@@ -7,7 +7,7 @@ export const Content = styled.View`
   height: 100%;
   align-items: center;
   justify-content: center;
-  background: ${theme.colors.secondary_light};
+  background: ${theme.colors.primary};
 `
 export const SliderHeader = styled.View`
   width: 100%;
@@ -17,7 +17,6 @@ export const SliderHeader = styled.View`
 `
 export const SliderImage = styled.Image`
   width: 100%;
-  height: 50%;
 `
 export const SliderFooter = styled.View`
   width: 90%;
@@ -26,12 +25,13 @@ export const SliderFooter = styled.View`
   justify-content: center;
 `
 export const SliderTitle = styled.Text`
-  font-size: ${theme.sizes.subHeading};
+  font-size: ${theme.sizes.heading};
   font-family: ${theme.fonts.heading};
-  color: ${theme.colors.title};
+  color: ${theme.colors.shape};
+  margin-bottom: 20px;
 `
 export const SliderDescription = styled.Text`
   font-size: ${theme.sizes.body};
   font-family: ${theme.fonts.body};
-  color: ${theme.colors.text};
+  color: ${theme.colors.shape};
 `

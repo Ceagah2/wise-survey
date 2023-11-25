@@ -1,12 +1,14 @@
 import React from 'react';
 import * as S from './styles';
+import {onboardingAtom} from '../../store';
 import SurveyImage from '../../assets/survey.png';
 import RatingImage from '../../assets/rating.png';
 import ListeningImage from '../../assets/listening.png';
-import AppIntroSlider from 'react-native-app-intro-slider';
 import { useNavigation } from '@react-navigation/native';
-import { Container } from '../../components/atoms/Container';
 import { TNavigationType, ISlideItem } from '../../types';
+import AppIntroSlider from 'react-native-app-intro-slider';
+import { useAtom } from 'jotai';
+
 
 const slides = [
   {
@@ -31,9 +33,11 @@ const slides = [
 ];
 
 const IntroSlider = () => {
+  const [, setOnboarding] = useAtom(onboardingAtom);
   const navigate = useNavigation<TNavigationType>();
 
   const onDone = () => {
+    setOnboarding(true);
     navigate.navigate('Home');
   }
 
